@@ -1,0 +1,43 @@
+#include"Utility.h"
+#include"Lk_list_double.h"
+#include"String.h"
+#include"Editor.h"
+
+
+void main(int argc, char *argv[]) // count, values of command-line arguments
+/*
+Pre:  Names of input and output files are given as command-line arguments.
+Post: Reads an input file that contains lines (character strings),
+      performs simple editing operations on the lines, and
+      writes the edited version to the output file.
+Uses: methods of class Editor
+*/
+{
+	char infName[256],outfName[256];
+
+	if (argc < 2) {
+		cout << "Please input inputfile name(eg. file_in.txt):";
+		cin >> infName;
+	}
+	else strcpy(infName,argv[1]);
+	ifstream file_in(infName);   //  Declare and open the input stream.
+	if (file_in == 0) {
+		cout << "Can't open input file " << infName << endl;
+		exit (1);
+	}
+	
+	if (argc < 3) {
+		cout << "Please input outputfile name(eg. file_out.txt):";
+		cin >> outfName;
+	}
+	else strcpy(outfName,argv[2]);
+	ofstream file_out(outfName);   //  Declare and open the output stream.
+	if (file_out == 0) {
+		cout << "Can't open output file " << outfName << endl;
+		exit (1);
+	}
+
+	Editor buffer(&file_in, &file_out);
+	while (buffer.get_command())
+		buffer.run_command();
+}
