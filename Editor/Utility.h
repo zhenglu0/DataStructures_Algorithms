@@ -12,14 +12,9 @@
 #include <cstdio>       //standard I/O libray
 enum Status_code {SUCCESS, FAIL, UNDER_FLOW, OVER_FLOW,RANGE_ERROR, DUPLICATE_ERROR,
 	NOT_PRESENT, ENTRY_INSERTED, ENTRY_FOUND};
-//enum bool{false,true}; //used to turbo C++ 3.0
-
-//#include "book.h"       //add utility functions in the book
-//#include "compare.h"    //overload compare operation
 
 #ifndef DefaultListSize
 #define DefaultListSize 1000
 #endif  
 
 #endif
-

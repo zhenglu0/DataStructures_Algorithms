@@ -1,4 +1,4 @@
-﻿#include "Utility.h"
+#include "Utility.h"
 #include "List.h"
 #include "Dlist.h"
 #include "String.h"

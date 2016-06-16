@@ -1,4 +1,4 @@
-﻿#ifndef __STRING_H__
+#ifndef __STRING_H__
 #define __STRING_H__
 
 #include "Utility.h"

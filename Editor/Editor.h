@@ -1,4 +1,4 @@
-﻿#ifndef __EDITOR_H__
+#ifndef __EDITOR_H__
 #define __EDITOR_H__
 
 #include "Utility.h"
