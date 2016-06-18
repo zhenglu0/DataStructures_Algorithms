@@ -1,6 +1,6 @@
 #include "Calculator.h"
 
-int main()
+int main(int argc, char *argv[])
 {
   Calculator<double> s;
   char iscontinue='Y';
