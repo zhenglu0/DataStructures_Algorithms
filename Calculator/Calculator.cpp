@@ -1,5 +1,3 @@
-#include "Utility.h"
-#include "Lkstack.h"
 #include "Calculator.h"
 
 int main()

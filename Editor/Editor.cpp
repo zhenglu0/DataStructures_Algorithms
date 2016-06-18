@@ -1,9 +1,4 @@
-#include "Utility.h"
-#include "List.h"
-#include "Dlist.h"
-#include "String.h"
 #include "Editor.h"
-
 
 int main(int argc, char *argv[])    // 命令行参数
 // 前提条件: 在命令行中给出输入文件和输出文件

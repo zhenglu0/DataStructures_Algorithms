@@ -1,6 +1,9 @@
 #ifndef __CALCULATOR_H__
 #define __CALCULATOR_H__
 
+#include "Utility.h"
+#include "Lkstack.h"
+
 using namespace std;
 
 template<class Data_element>
