@@ -34,9 +34,7 @@ int main(int argc, char *argv[])
 
     cout<<"排课结束，课表文件为: "<<outfile_name<<endl;
     cout<<"按任意退出"<<endl;
-    //getch();
-    //cin.ignore();
-    
+
     return 0;
 }
   
