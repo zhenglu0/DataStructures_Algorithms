@@ -245,9 +245,9 @@ void Range_Course<terms_num>::write()
         
         //显示课表内容
         for(i=1;i<=10;i++){
-            write(strcat(strcat(strcpy(s,"第"),decimal_to_chinese_char(i,s_tem)),"节"),8);
+            write(strcat(strcat(strcpy(s,"第"),decimal_to_chinese_char(i,s_tem)),"节"),18);
             for(week_day=1;week_day<=5;week_day++)
-                write(course_table[term][i][week_day],18);
+                write(course_table[term][i][week_day],25);
             (*outfile)<<endl;
 
             if(i==2||i==7)(*outfile)<<endl<<"课间休息"<<endl<<endl;
