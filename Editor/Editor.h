@@ -1,9 +1,9 @@
 #ifndef __EDITOR_H__
 #define __EDITOR_H__
 
-#include "Utility.h"
-#include "Dlist.h"
-#include "String.h"
+#include "../Utils/Utility.h"
+#include "../Utils/Dlist.h"
+#include "../Utils/String.h"
 
 // 文本编辑类
 class Editor

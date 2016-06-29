@@ -1,8 +1,8 @@
 #ifndef __HUFFMAN_H__
 #define __HUFFMAN_H__
 
-#include "Utility.h"
-#include "Lkstack.h"
+#include "../Utils/Utility.h"
+#include "../Utils/Lkstack.h"
 
 using namespace std;
 

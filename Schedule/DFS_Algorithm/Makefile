@@ -8,7 +8,8 @@
 
 CXX       = g++
 CXXFLAGS  = -g -Wall -Werror
-VPATH = ../utils
+VPATH = ../../Utils
+
 ##############################################################
 # You shouldn't have to change anything below this line.
 ##############################################################

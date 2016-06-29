@@ -1,8 +1,8 @@
 #ifndef __RANGE_COURSE_H__
 #define __RANGE_COURSE_H__
 
-#include "../utils/Sq_queue.h"
-#include "../utils/Adjacency_lists.h"
+#include "../../Utils/Sq_queue.h"
+#include "../../Utils/Adjacency_lists.h"
 
 using namespace std;
 

@@ -1,8 +1,8 @@
 #ifndef __CALCULATOR_H__
 #define __CALCULATOR_H__
 
-#include "Utility.h"
-#include "Lkstack.h"
+#include "../Utils/Utility.h"
+#include "../Utils/Lkstack.h"
 
 using namespace std;
 
