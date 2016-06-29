@@ -44,10 +44,10 @@ private:
     int locate_vex(char course_no[]);    //重载定位顶点
     void readln();                       //跳行  
     char get_char();                     //从输入流中输入一有意义的字符  
-    bool range(int num,int term,char course_name[]);//排课
-    bool range_one(int &week_day,int term, const char course_name[]);//排一天的1节课
-    bool range_two(int &week_day,int term, const char course_name[]);//排一天的2节课
-    bool range_three(int &week_day,int term, const char course_name[]);//排一天的3节课
+    bool range(int num,int term,const char course_name[]);//排课
+    bool range_one(int &week_day,int term,const char course_name[]);//排一天的1节课
+    bool range_two(int &week_day,int term,const char course_name[]);//排一天的2节课
+    bool range_three(int &week_day,int term,const char course_name[]);//排一天的3节课
     int find_one(int week_day,int term);//找查一天1节空课
     int find_two(int week_day,int term);//找查一天连续2节空课
     int find_three(int week_day,int term);//找查一天连续3节空课
@@ -291,7 +291,7 @@ char Range_Course<terms_num>::get_char()
 
 
 template<int terms_num> 
-bool Range_Course<terms_num>::range(int num,int term,char course_name[])
+bool Range_Course<terms_num>::range(int num,int term,const char course_name[])
 {    //排课
     static int week_day=1; //要排课的星期
     int i;
